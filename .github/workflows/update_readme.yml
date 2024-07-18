@@ -4,6 +4,8 @@ on:
   push:
     branches:    
       - main
+    paths:
+      - 'ReadMe.md'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
