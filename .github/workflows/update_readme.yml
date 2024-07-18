@@ -10,14 +10,14 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "這個工作(job) 被 [${{ github.event_name }}] 事件(envent)驅動."
-      - run: echo "這個工作(job) 被 GitHub 掌控在 [${{ runner.os }}] 中執行!"
-      - run: echo "分支(branch)名稱 [${{ github.ref }}], 倉庫(repository)名稱 [${{ github.repository }}]."
+      - run: echo "🎉 這個工作(job) 被 [${{ github.event_name }}] 事件(envent)驅動."
+      - run: echo "🐧 這個工作(job) 被 GitHub 掌控在 [${{ runner.os }}] 中執行!"
+      - run: echo "🔎 分支(branch)名稱 [${{ github.ref }}], 倉庫(repository)名稱 [${{ github.repository }}]."
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "這個 [${{ github.repository }}] 倉庫(repository) 被複製到工作區."
-      - run: echo "工作區已準備執行 工作流(workflow)."
+      - run: echo "💡 這個 [${{ github.repository }}] 倉庫(repository) 被複製到工作區."
+      - run: echo "🖥️ 工作區已準備執行 工作流(workflow)."
       - name: List files in the repository
         run: |
           ls -la ${{ github.workspace }}
-      - run: echo "這個工作(job) 狀態 [${{ job.status }}]."
+      - run: echo "🍏 這個工作(job) 狀態 [${{ job.status }}]."
