@@ -5,7 +5,7 @@ on:
     branches:    
       - main
     paths:
-      - 'ReadMe.md'
+      - 'version.txt'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
